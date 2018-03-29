@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,4 +31,18 @@ public class HelloController {
         model.addAttribute("people",people);
         return "index";
     }
+
+
+    @RequestMapping(value = {"/login"})
+    public ModelAndView login(){
+        ModelAndView mav = new ModelAndView("login");
+        mav.addObject("jack","good");
+        return mav;
+    }
+
+    @RequestMapping(value = {"/login2"})
+    public String login2(){
+        return "login";
+    }
+
 }

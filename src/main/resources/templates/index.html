@@ -1,5 +1,7 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+>
 <head>
     <meta content="text/html;charset=UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -39,7 +41,7 @@
 <script th:inline="javascript">
     //alert(${singlePerson});
     var single = [[${singlePerson}]];
-    alert(single);
+    //alert(single);
     console.log(single.name+" / "+single.age);
     function getName(name) {
         console.log(name);

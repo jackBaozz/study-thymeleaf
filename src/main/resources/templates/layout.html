@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<!--
+th:insert  ：保留自己的主标签，保留th:fragment的主标签。
+th:replace ：不要自己的主标签，保留th:fragment的主标签。
+th:include ：保留自己的主标签，不要th:fragment的主标签。
+-->
+<div th:replace="templates/layout/footer :: footer"></div>
+<div layout:fragment="content"></div>
+<div th:replace="templates/layout/left :: left"></div>
+</body>
+</html>
