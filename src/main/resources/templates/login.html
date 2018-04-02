@@ -16,12 +16,21 @@
     这里是头部 -&#45;&#45; login.html
 </header>
 */-->
+<p th:text="_">不进行任何操作</p>
 <div layout:fragment="content">
     <div class="container-fluid">
+        <div th:if="true">
+            if条件判断---true
+        </div>
+        <div th:if="false">
+            if条件判断---false
+        </div>
         <div class="row">
             <div>
                 <input type="text" class="form-control col-sm-12" placeholder="请输入账号名"/>
                 <input type="password" class="form-control col-sm-12" placeholder="请输入密码"/>
+                <input th:attr="type='button',value='${msg}'" />
+                <input th:type="button" th:value="ok"/>
             </div>
         </div>
     </div>
