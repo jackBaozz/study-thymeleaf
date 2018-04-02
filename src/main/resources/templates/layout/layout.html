@@ -8,17 +8,14 @@
 </head>
 
 <body>
-<!--
+<!--/*
 th:insert  ：保留自己这里的主标签，保留th:fragment的主标签。
 th:replace ：不要自己这里的主标签，保留th:fragment的主标签。
 th:include ：保留自己这里的主标签，不要th:fragment的主标签。
--->
-<!--<header layout:fragment="header" style="background-color: #ff951b">
+*/-->
+<!--/*<header layout:fragment="header" style="background-color: #ff951b">
 这里是头部 -&#45;&#45; layout.html
-</header>-->
-
-
-
+</header>*/-->
 
 <div th:replace="layout/header :: header">
 </div>
