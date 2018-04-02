@@ -19,6 +19,7 @@ th:include ：保留自己这里的主标签，不要th:fragment的主标签。
 
 <div th:replace="layout/header :: header">
 </div>
+<!-- /* 带替换fragment */ -->
 <div layout:fragment="content"/>
 <div th:replace="layout/left :: left"/>
 <div th:replace="layout/footer :: footer"/>
